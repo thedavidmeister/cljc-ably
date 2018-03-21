@@ -42,7 +42,8 @@
 (bootlaces! version)
 
 (def compiler-options
- {:foreign-libs [
+ {:externs ["externs.js"]
+  :foreign-libs [
                  ; Ably client lib.
                  {; https://cdn.ably.io/lib/ably-1.0.6.js
                   :file "lib/ably/1.0.13/ably.js"
@@ -52,12 +53,14 @@
 
 (deftask front-dev
  "Build for local development."
- []
+ [a advanced-compilation? bool "Compile CLJS with advanced compilation"]
  (comp
   (watch)
   (speak)
   (hoplon)
-  (cljs :compiler-options compiler-options)
+  (cljs
+   :optimizations (if advanced-compilation? :advanced :none)
+   :compiler-options compiler-options)
   (serve :port 8000)))
 
 (deftask build
