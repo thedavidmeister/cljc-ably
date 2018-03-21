@@ -1,5 +1,5 @@
 (def project 'thedavidmeister/cljc-ably)
-(def version "0.1.0-SNAPSHOT")
+(def version "0.1.0")
 (def description "CLJC wrapper for ably.")
 (def github-url "https://github.com/thedavidmeister/cljc-ably")
 
