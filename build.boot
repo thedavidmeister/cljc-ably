@@ -4,6 +4,8 @@
 (def github-url "https://github.com/thedavidmeister/cljc-ably")
 
 (set-env!
+ :repositories [["jcenter" "https://jcenter.bintray.com/"]
+                ["clojars.org" "http://clojars.org/repo"]]
  :source-paths #{"src"}
  :dependencies
  '[; scaffolding...
@@ -16,9 +18,11 @@
    [tailrecursion/boot-jetty  "0.1.3"]
    [thedavidmeister/boot-github-pages "0.1.0-SNAPSHOT"]
    [crisptrutski/boot-cljs-test "0.3.5-SNAPSHOT"]
-   [adzerk/bootlaces "0.1.13"]])
+   [adzerk/bootlaces "0.1.13"]
 
    ; everything else...
+   [thedavidmeister/wheel "0.3.2-SNAPSHOT"]
+   [io.ably/ably-java "1.0.1"]])
 
 (task-options!
  pom {:project project
@@ -38,7 +42,13 @@
 (bootlaces! version)
 
 (def compiler-options
- {})
+ {:foreign-libs [
+                 ; Ably client lib.
+                 {; https://cdn.ably.io/lib/ably-1.0.6.js
+                  :file "lib/ably/1.0.13/ably.js"
+                  ; https://cdn.ably.io/lib/ably.min-1.0.6.js
+                  :file-min "lib/ably/1.0.13/ably.min.js"
+                  :provides ["ably.lib"]}]})
 
 (deftask front-dev
  "Build for local development."
