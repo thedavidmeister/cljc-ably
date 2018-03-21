@@ -12,6 +12,10 @@ pages.index.ably_key = (function (){var G__23213 = cljs.core.subs.cljs$core$IFn$
 return goog.crypt.base64.decodeString(G__23213);
 })();
 }
+if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2("",pages.index.ably_key)){
+} else {
+throw (new Error(["Assert failed: ","Missing ably key!","\n","(not= \"\" ably-key)"].join('')));
+}
 if(typeof pages.index.ably !== 'undefined'){
 } else {
 pages.index.ably = (ably.realtime.core.ably.cljs$core$IFn$_invoke$arity$1 ? ably.realtime.core.ably.cljs$core$IFn$_invoke$arity$1(pages.index.ably_key) : ably.realtime.core.ably.call(null,pages.index.ably_key));
