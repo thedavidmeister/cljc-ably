@@ -12,7 +12,7 @@
   (subs
    (.-hash (.-location js/window))
    1)))
-
+(assert (not= "" ably-key) "Missing ably key!")
 (defonce ably (ably.realtime.core/ably ably-key))
 
 (h/html
@@ -26,6 +26,5 @@
      :click
      (fn []
       (ably.realtime.channels/publish! ably "xyz" :inc :inc #(prn "publish!")))
-
      "Click to increment over network!")
     (h/span "Count: " c)))))

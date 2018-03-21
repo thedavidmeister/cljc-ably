@@ -33,7 +33,7 @@ return channel_name;
 } else {
 return taoensso.timbre._log_BANG_.cljs$core$IFn$_invoke$arity$10(taoensso.timbre._STAR_config_STAR_,cljs.core.cst$kw$warn,"ably.channels",null,34,cljs.core.cst$kw$p,cljs.core.cst$kw$auto,(new cljs.core.Delay((function (){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Invalid channel",channel_name], null);
-}),null)),null,1385126719);
+}),null)),null,-531667219);
 
 }
 }
@@ -186,7 +186,7 @@ return result__17551__auto__;
 return cljs.test.do_report(new cljs.core.PersistentArrayMap(null, 4, [cljs.core.cst$kw$type,cljs.core.cst$kw$error,cljs.core.cst$kw$expected,cljs.core.list(cljs.core.cst$sym$valid_DASH_channel_DASH_name_QMARK_,"foo]bar"),cljs.core.cst$kw$actual,t__17595__auto__,cljs.core.cst$kw$message,null], null));
 }});
 
-ably.channels._QMARK__QMARK_valid_channel_name_QMARK_.cljs$lang$var = new cljs.core.Var(function(){return ably.channels._QMARK__QMARK_valid_channel_name_QMARK_;},cljs.core.cst$sym$ably$channels_SLASH__QMARK__QMARK_valid_DASH_channel_DASH_name_QMARK_,cljs.core.PersistentHashMap.fromArrays([cljs.core.cst$kw$ns,cljs.core.cst$kw$name,cljs.core.cst$kw$file,cljs.core.cst$kw$end_DASH_column,cljs.core.cst$kw$column,cljs.core.cst$kw$line,cljs.core.cst$kw$end_DASH_line,cljs.core.cst$kw$arglists,cljs.core.cst$kw$doc,cljs.core.cst$kw$test],[cljs.core.cst$sym$ably$channels,cljs.core.cst$sym$_QMARK__QMARK_valid_DASH_channel_DASH_name_QMARK_,"/Users/davidmeister/.boot/cache/tmp/Users/davidmeister/cljc-ably/4ko/uanrg/ably/channels.cljc",31,1,56,56,cljs.core.List.EMPTY,null,(cljs.core.truth_(ably.channels._QMARK__QMARK_valid_channel_name_QMARK_)?ably.channels._QMARK__QMARK_valid_channel_name_QMARK_.cljs$lang$test:null)]));
+ably.channels._QMARK__QMARK_valid_channel_name_QMARK_.cljs$lang$var = new cljs.core.Var(function(){return ably.channels._QMARK__QMARK_valid_channel_name_QMARK_;},cljs.core.cst$sym$ably$channels_SLASH__QMARK__QMARK_valid_DASH_channel_DASH_name_QMARK_,cljs.core.PersistentHashMap.fromArrays([cljs.core.cst$kw$ns,cljs.core.cst$kw$name,cljs.core.cst$kw$file,cljs.core.cst$kw$end_DASH_column,cljs.core.cst$kw$column,cljs.core.cst$kw$line,cljs.core.cst$kw$end_DASH_line,cljs.core.cst$kw$arglists,cljs.core.cst$kw$doc,cljs.core.cst$kw$test],[cljs.core.cst$sym$ably$channels,cljs.core.cst$sym$_QMARK__QMARK_valid_DASH_channel_DASH_name_QMARK_,"/Users/davidmeister/.boot/cache/tmp/Users/davidmeister/cljc-ably/4pq/uanrg/ably/channels.cljc",31,1,56,56,cljs.core.List.EMPTY,null,(cljs.core.truth_(ably.channels._QMARK__QMARK_valid_channel_name_QMARK_)?ably.channels._QMARK__QMARK_valid_channel_name_QMARK_.cljs$lang$test:null)]));
 ably.channels._QMARK__QMARK_normalize_name = (function ably$channels$_QMARK__QMARK_normalize_name(){
 return cljs.test.test_var(ably.channels._QMARK__QMARK_normalize_name.cljs$lang$var);
 });
@@ -373,4 +373,4 @@ break;
 }
 });
 
-ably.channels._QMARK__QMARK_normalize_name.cljs$lang$var = new cljs.core.Var(function(){return ably.channels._QMARK__QMARK_normalize_name;},cljs.core.cst$sym$ably$channels_SLASH__QMARK__QMARK_normalize_DASH_name,cljs.core.PersistentHashMap.fromArrays([cljs.core.cst$kw$ns,cljs.core.cst$kw$name,cljs.core.cst$kw$file,cljs.core.cst$kw$end_DASH_column,cljs.core.cst$kw$column,cljs.core.cst$kw$line,cljs.core.cst$kw$end_DASH_line,cljs.core.cst$kw$arglists,cljs.core.cst$kw$doc,cljs.core.cst$kw$test],[cljs.core.cst$sym$ably$channels,cljs.core.cst$sym$_QMARK__QMARK_normalize_DASH_name,"/Users/davidmeister/.boot/cache/tmp/Users/davidmeister/cljc-ably/4ko/uanrg/ably/channels.cljc",26,1,65,65,cljs.core.List.EMPTY,null,(cljs.core.truth_(ably.channels._QMARK__QMARK_normalize_name)?ably.channels._QMARK__QMARK_normalize_name.cljs$lang$test:null)]));
+ably.channels._QMARK__QMARK_normalize_name.cljs$lang$var = new cljs.core.Var(function(){return ably.channels._QMARK__QMARK_normalize_name;},cljs.core.cst$sym$ably$channels_SLASH__QMARK__QMARK_normalize_DASH_name,cljs.core.PersistentHashMap.fromArrays([cljs.core.cst$kw$ns,cljs.core.cst$kw$name,cljs.core.cst$kw$file,cljs.core.cst$kw$end_DASH_column,cljs.core.cst$kw$column,cljs.core.cst$kw$line,cljs.core.cst$kw$end_DASH_line,cljs.core.cst$kw$arglists,cljs.core.cst$kw$doc,cljs.core.cst$kw$test],[cljs.core.cst$sym$ably$channels,cljs.core.cst$sym$_QMARK__QMARK_normalize_DASH_name,"/Users/davidmeister/.boot/cache/tmp/Users/davidmeister/cljc-ably/4pq/uanrg/ably/channels.cljc",26,1,65,65,cljs.core.List.EMPTY,null,(cljs.core.truth_(ably.channels._QMARK__QMARK_normalize_name)?ably.channels._QMARK__QMARK_normalize_name.cljs$lang$test:null)]));
