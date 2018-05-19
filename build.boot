@@ -90,3 +90,17 @@
  (comp
   (deploy-gh-pages)
   (deploy-clojars)))
+
+(require
+ '[samestep.boot-refresh :refer [refresh]])
+
+(deftask repl-server
+ []
+ (comp
+  (watch)
+  (refresh)
+  (repl :server true)))
+
+(deftask repl-client
+ []
+ (repl :client true))
