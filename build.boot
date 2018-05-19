@@ -14,6 +14,7 @@
    [hoplon "7.3.0-SNAPSHOT"]
    [pandeiro/boot-http "0.8.3"]
    [adzerk/boot-reload "0.5.1"]
+   [samestep/boot-refresh "0.1.0" :scope "test"]
    [adzerk/boot-cljs "2.1.4"]
    [tailrecursion/boot-jetty  "0.1.3"]
    [thedavidmeister/boot-github-pages "0.1.0-SNAPSHOT"]
